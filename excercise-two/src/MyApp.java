@@ -5,7 +5,7 @@ public class MyApp {
     public static void main(String[] args) {
         //defino variables
         double mexicanMoney, usaMoney;
-        final double dollarPrice = 22.37;
+        final double DOLAR_PRICE = 22.37;
 
         //Habilito los ingresos por teclado
         Scanner keyboard = new Scanner(System.in);
@@ -15,7 +15,7 @@ public class MyApp {
         mexicanMoney = keyboard.nextDouble();
 
         //Hago el calculo
-        usaMoney = mexicanMoney / dollarPrice;
+        usaMoney = mexicanMoney / DOLAR_PRICE;
         //Lo muestro
         System.out.println("Cantidad de dolares " + usaMoney);
 
