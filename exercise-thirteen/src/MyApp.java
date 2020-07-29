@@ -6,8 +6,8 @@ public class MyApp {
         //Doy título al ejercicio y declaro variables
         System.out.println("Ahorro de sueldo");
         double salary, salaryPermonth, salaryPeryear;
-        final double discount = 0.65;
-        final double months = 12;
+        final double DISCOUNT = 0.65;
+        final double MONTHS = 12;
 
         //Habilito el ingreso por teclado
         Scanner keyboard = new Scanner(System.in);
@@ -17,8 +17,8 @@ public class MyApp {
         salary = keyboard.nextDouble();
 
         //Hago los calculos
-        salaryPermonth = salary * discount;
-        salaryPeryear = salaryPermonth * months;
+        salaryPermonth = salary * DISCOUNT;
+        salaryPeryear = salaryPermonth * MONTHS;
 
         //Muestro el resultado
         System.out.println("El ahorro de un año es $" + salaryPeryear);

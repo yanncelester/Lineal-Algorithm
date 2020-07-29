@@ -6,7 +6,7 @@ public class MyApp {
         //Doy título a mi programa y declaro la variable
         System.out.println("Programa para calcular monto del cheque");
         double hotelPerDay, days, foodAndbeverages, totalHotel, totalFood, totalMoney, totalTrip;
-        final double moneyAdditional = 100;
+        final double MONEY_ADDITION = 100;
 
         //Habilito ingreso de datos
         Scanner keyboard = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class MyApp {
         //Hago el calculo y muestro por pantalla:
         totalHotel = hotelPerDay * days;
         totalFood = foodAndbeverages * days;
-        totalMoney = moneyAdditional * days;
+        totalMoney = MONEY_ADDITION * days;
         totalTrip = totalFood + totalHotel + totalMoney;
         System.out.println("El costo total de alojamiento es: " + totalHotel);
         System.out.println("El costo total por alimentos es: "+ totalFood);

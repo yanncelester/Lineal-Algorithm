@@ -6,7 +6,6 @@ public class MyApp {
         System.out.println("Programa que calcula potencia electrica");
         int power, voltage, electricCurrent, resistance;
 
-
         Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Ingresar resistencia en ohmnios: ");

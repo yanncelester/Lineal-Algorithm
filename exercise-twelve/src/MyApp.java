@@ -6,8 +6,8 @@ public class MyApp {
         //Doy título al programa y declaro las variables
         System.out.println("Programa para saber cuanto se va a pagar por un artículo");
         double priceItem, priceWithdiscount, finalPrice;
-        final double ivaItem = 0.15;
-        final double discount = 0.2;
+        final double IVA_ITEM = 0.15;
+        final double DISCOUNT = 0.2;
 
         //Habilito el ingreso por teclado
         Scanner keyboard = new Scanner(System.in);
@@ -17,8 +17,8 @@ public class MyApp {
         priceItem = keyboard.nextDouble();
 
         //Calculo
-        priceWithdiscount = priceItem - (priceItem * discount);
-        finalPrice = priceWithdiscount + (priceWithdiscount *ivaItem);
+        priceWithdiscount = priceItem - (priceItem * DISCOUNT);
+        finalPrice = priceWithdiscount + (priceWithdiscount *IVA_ITEM);
 
         //Imprimo por pantalla los valores
         System.out.println("El precio con descuento es $" + priceWithdiscount);
